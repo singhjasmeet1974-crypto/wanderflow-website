@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderflow - A Comprehensive Travel Booking & Exploration Platform</title>
+    
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====================================================================
+         HEADER & NAVIGATION BAR
+         ==================================================================== -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <!-- Website Logo -->
+                <a href="index.html" class="logo-container">
+                    <img src="images/logo.png" alt="Wanderflow Logo" class="logo-img" width="180" height="45">
+                </a>
+
+                <!-- Navigation Hyperlinks -->
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====================================================================
+         HERO SECTION
+         ==================================================================== -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Academic Training Project | GNDEC IT</span>
+                <h1 class="hero-title">Explore the World with Wanderflow</h1>
+                <p class="hero-tagline">"Discover Places. Create Memories. Travel Freely."</p>
+                <p class="hero-description">
+                    Welcome to Wanderflow, your comprehensive portal for discovering breathtaking destinations, 
+                    comparing curated holiday packages, and planning memorable journeys. Designed by B.Tech 
+                    Information Technology students with a focus on simplicity, elegance, and user-centric navigation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="destinations.html" class="btn btn-primary">Explore Destinations</a>
+                    <a href="packages.html" class="btn btn-secondary">View Tour Packages</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================================
+         TRAVEL SEARCH SECTION (FRONTEND DEMONSTRATION FORM)
+         ==================================================================== -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <h3 class="search-box-title">Find Your Perfect Getaway</h3>
+                
+                <!-- Frontend Search Form (Uses GET method per syllabus) -->
+                <form action="destinations.html" method="get" class="search-form">
+                    
+                    <!-- Destination Input -->
+                    <div class="form-group">
+                        <label for="search-dest">Destination</label>
+                        <input type="text" id="search-dest" name="destination" placeholder="Where do you want to go?" required>
+                    </div>
+
+                    <!-- Travel Date Input -->
+                    <div class="form-group">
+                        <label for="search-date">Travel Date</label>
+                        <input type="date" id="search-date" name="travel_date" required>
+                    </div>
+
+                    <!-- Number of Travellers -->
+                    <div class="form-group">
+                        <label for="search-guests">Travellers</label>
+                        <input type="number" id="search-guests" name="travellers" min="1" max="15" value="2" required>
+                    </div>
+
+                    <!-- Destination Category Dropdown -->
+                    <div class="form-group">
+                        <label for="search-category">Category</label>
+                        <select id="search-category" name="category">
+                            <option value="all">All Categories</option>
+                            <option value="mountains">Snow &amp; Mountains</option>
+                            <option value="beaches">Beaches &amp; Coastal</option>
+                            <option value="heritage">Heritage &amp; Culture</option>
+                            <option value="nature">Lakes &amp; Valleys</option>
+                            <option value="international">International Wonders</option>
+                        </select>
+                    </div>
+
+                    <!-- Search Button -->
+                    <div class="form-group search-btn-container">
+                        <button type="submit" class="btn btn-primary">Search Trips</button>
+                    </div>
+                </form>
+
+                <p class="search-demo-note">
+                    <small><b>Note:</b> This is a frontend visual demonstration. Clicking search will navigate to our Destinations exploration showcase.</small>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================================
+         POPULAR DESTINATIONS SECTION
+         ==================================================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Destinations</h2>
+                <p class="section-subtitle">
+                    Immerse yourself in top-rated travel spots curated for scenic beauty, rich culture, and thrilling adventures.
+                </p>
+            </div>
+
+            <!-- Destinations Card Grid -->
+            <div class="destinations-grid">
+
+                <!-- 1. Manali Card -->
+                <article class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/manali.jpg" alt="Snowy peaks and valley in Manali" width="360" height="220">
+                        <span class="card-badge">Mountains</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Manali, Himachal Pradesh</h3>
+                        <p class="card-desc">
+                            Known for snow-capped Himalayan ridges, Solang Valley adventure sports, and the scenic Beas river basin.
+                        </p>
+                        <div class="card-footer">
+                            <span class="dest-location"><b>Location:</b> North India</span>
+                            <a href="destinations.html#manali" class="card-explore-link">Explore Details &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. Goa Card -->
+                <article class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/goa.jpg" alt="Tropical palm trees and golden beach in Goa" width="360" height="220">
+                        <span class="card-badge">Coastal</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Goa, Coastal India</h3>
+                        <p class="card-desc">
+                            India's sunshine state boasting vibrant beaches, water sports, Portuguese architecture, and picturesque sunsets.
+                        </p>
+                        <div class="card-footer">
+                            <span class="dest-location"><b>Location:</b> West Coast</span>
+                            <a href="destinations.html#goa" class="card-explore-link">Explore Details &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. Kashmir Card -->
+                <article class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/kashmir.jpg" alt="Serene Dal Lake with shikara boats in Kashmir" width="360" height="220">
+                        <span class="card-badge">Valleys</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Kashmir, Paradise on Earth</h3>
+                        <p class="card-desc">
+                            Admired for tranquil Dal Lake shikaras, verdant Gulmarg meadows, and majestic pine forests against snow peaks.
+                        </p>
+                        <div class="card-footer">
+                            <span class="dest-location"><b>Location:</b> Jammu &amp; Kashmir</span>
+                            <a href="destinations.html#kashmir" class="card-explore-link">Explore Details &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. Jaipur Card -->
+                <article class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/jaipur.jpg" alt="Magnificent architecture of Jaipur" width="360" height="220">
+                        <span class="card-badge">Heritage</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Jaipur, The Pink City</h3>
+                        <p class="card-desc">
+                            Steeped in royal Rajasthani heritage, grand forts like Amer and Nahargarh, and colorful artisan bazaars.
+                        </p>
+                        <div class="card-footer">
+                            <span class="dest-location"><b>Location:</b> Rajasthan</span>
+                            <a href="destinations.html#jaipur" class="card-explore-link">Explore Details &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. Bali Card -->
+                <article class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/bali.jpg" alt="Ancient Balinese temple and lush greenery" width="360" height="220">
+                        <span class="card-badge">Tropical</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Bali, Indonesia</h3>
+                        <p class="card-desc">
+                            A tropical island sanctuary renowned for ancient cliffside temples, verdant rice terraces, and crystal blue lagoons.
+                        </p>
+                        <div class="card-footer">
+                            <span class="dest-location"><b>Location:</b> Southeast Asia</span>
+                            <a href="destinations.html#bali" class="card-explore-link">Explore Details &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. Switzerland Card -->
+                <article class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/switzerland.jpg" alt="Scenic Swiss Alps with green valley and snowy mountains" width="360" height="220">
+                        <span class="card-badge">Alpine</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Swiss Alps, Switzerland</h3>
+                        <p class="card-desc">
+                            Iconic alpine landscapes featuring panoramic cogwheel trains, sparkling glacial lakes, and charming wooden chalets.
+                        </p>
+                        <div class="card-footer">
+                            <span class="dest-location"><b>Location:</b> Central Europe</span>
+                            <a href="destinations.html#switzerland" class="card-explore-link">Explore Details &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================================
+         WHY CHOOSE WANDERFLOW SECTION
+         ==================================================================== -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Wanderflow</h2>
+                <p class="section-subtitle">
+                    Designed to bridge the gap between travel discovery and trip planning with an intuitive user experience.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-box">
+                    <div class="feature-number">1</div>
+                    <h3 class="feature-title">Easy Travel Planning</h3>
+                    <p class="feature-desc">
+                        Find key destination insights, travel activities, and best times to visit all in one structured platform without tab juggling.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-box">
+                    <div class="feature-number">2</div>
+                    <h3 class="feature-title">Beautiful Destinations</h3>
+                    <p class="feature-desc">
+                        Explore handpicked locations spanning snow-covered peaks, tranquil backwaters, royal forts, and pristine tropical beaches.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-box">
+                    <div class="feature-number">3</div>
+                    <h3 class="feature-title">Affordable Packages</h3>
+                    <p class="feature-desc">
+                        Access clearly presented tour packages with transparent pricing, full inclusions, and duration breakdowns for every budget.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-box">
+                    <div class="feature-number">4</div>
+                    <h3 class="feature-title">User-Friendly Experience</h3>
+                    <p class="feature-desc">
+                        Enjoy lightning-fast page loading and clean responsive layouts built using semantic HTML5 and modern CSS3 standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================================
+         CALL TO ACTION BANNER
+         ==================================================================== -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Ready to Plan Your Next Journey?</h2>
+            <p>
+                Take a look at our curated holiday packages with transparent price estimates and handpicked itineraries.
+            </p>
+            <a href="packages.html" class="btn btn-primary">Browse All Packages</a>
+        </div>
+    </section>
+
+    <!-- ====================================================================
+         FOOTER
+         ==================================================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="footer-col">
+                    <h3>WANDERFLOW</h3>
+                    <p>
+                        A Comprehensive Travel Booking and Exploration Platform designed as an academic frontend project 
+                        by B.Tech Information Technology students at Guru Nanak Dev Engineering College, Ludhiana.
+                    </p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">&bull; Home</a></li>
+                        <li><a href="destinations.html">&bull; Destinations</a></li>
+                        <li><a href="packages.html">&bull; Travel Packages</a></li>
+                        <li><a href="about.html">&bull; About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Info -->
+                <div class="footer-col">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-item">
+                        <span><b>Email:</b></span>
+                        <a href="mailto:info@wanderflow.com">info@wanderflow.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span><b>Phone:</b></span>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span><b>Campus:</b></span>
+                        <span>GNDEC, Gill Park, Ludhiana, Punjab - 141006</span>
+                    </div>
+                </div>
+
+                <!-- Col 4: Project Info -->
+                <div class="footer-col">
+                    <h3>Academic Info</h3>
+                    <p>
+                        <b>Batch:</b> 2026 (June - July Training)<br>
+                        <b>Department:</b> Information Technology<br>
+                        <b>College:</b> Guru Nanak Dev Engineering College<br>
+                        <b>Tech Stack:</b> HTML5 &amp; CSS3
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Wanderflow Travel Platform. Developed for Academic Training Evaluation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+

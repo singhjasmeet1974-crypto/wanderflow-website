@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages - Wanderflow Travel Platform</title>
+    
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====================================================================
+         HEADER & NAVIGATION BAR
+         ==================================================================== -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <!-- Website Logo -->
+                <a href="index.html" class="logo-container">
+                    <img src="images/logo.png" alt="Wanderflow Logo" class="logo-img" width="180" height="45">
+                </a>
+
+                <!-- Navigation Hyperlinks -->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html" class="active">Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====================================================================
+         PAGE BANNER
+         ==================================================================== -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Curated Travel Packages</h1>
+            <p>
+                Browse handpicked tour packages featuring transparent cost estimates, detailed duration breakdowns, 
+                and verified inclusions to make your vacation planning stress-free.
+            </p>
+        </div>
+    </section>
+
+    <!-- ====================================================================
+         TRAVEL PACKAGES GRID SECTION
+         ==================================================================== -->
+    <main class="section-padding">
+        <div class="container">
+            
+            <div class="section-header">
+                <h2 class="section-title">Featured Holiday Packages</h2>
+                <p class="section-subtitle">
+                    Select your favorite journey and explore full itineraries crafted for memorable adventures.
+                </p>
+            </div>
+
+            <div class="packages-grid">
+
+                <!-- Package 1: Manali -->
+                <article class="package-card" id="pkg-manali">
+                    <div class="package-img-wrap">
+                        <img src="images/manali.jpg" alt="Snow and pine trees in Manali" width="400" height="220">
+                        <span class="package-duration-badge">5 Days / 4 Nights</span>
+                    </div>
+                    <div class="package-body">
+                        <div class="package-header">
+                            <span class="package-destination">Manali, Himachal Pradesh</span>
+                            <h3 class="package-title">Manali Snow &amp; Valley Escape</h3>
+                        </div>
+                        <div class="package-price-box">
+                            Price: <mark>&#8377;14,999</mark> <small>/ person</small>
+                        </div>
+                        <p class="package-desc">
+                            Immerse in snow-covered peaks, Rohtang Pass excursions, Solang valley adventure activities, 
+                            and cozy evenings along the Beas river.
+                        </p>
+                        <div class="package-inclusions">
+                            <h4>Package Inclusions:</h4>
+                            <ul>
+                                <li>3-Star Hotel Stay with Mountain View</li>
+                                <li>Daily Buffet Breakfast &amp; Dinner</li>
+                                <li>Private AC Cab for Sightseeing</li>
+                                <li>Solang Valley &amp; Rohtang Pass Permit</li>
+                            </ul>
+                        </div>
+                        <a href="#booking-form" class="btn btn-primary">Book Now</a>
+                    </div>
+                </article>
+
+                <!-- Package 2: Goa -->
+                <article class="package-card" id="pkg-goa">
+                    <div class="package-img-wrap">
+                        <img src="images/goa.jpg" alt="Sunny Goa beach with palm trees" width="400" height="220">
+                        <span class="package-duration-badge">4 Days / 3 Nights</span>
+                    </div>
+                    <div class="package-body">
+                        <div class="package-header">
+                            <span class="package-destination">Goa Coastline</span>
+                            <h3 class="package-title">Goa Beach &amp; Sunset Retreat</h3>
+                        </div>
+                        <div class="package-price-box">
+                            Price: <mark>&#8377;11,499</mark> <small>/ person</small>
+                        </div>
+                        <p class="package-desc">
+                            Relax under golden sunrays, indulge in exciting water sports at Calangute, and enjoy a romantic 
+                            evening boat cruise along the Mandovi River.
+                        </p>
+                        <div class="package-inclusions">
+                            <h4>Package Inclusions:</h4>
+                            <ul>
+                                <li>Beachside Resort Stay with Pool</li>
+                                <li>Complimentary Daily Breakfast</li>
+                                <li>Mandovi Sunset River Cruise Ticket</li>
+                                <li>Airport / Railway Station Transfers</li>
+                            </ul>
+                        </div>
+                        <a href="#booking-form" class="btn btn-primary">Book Now</a>
+                    </div>
+                </article>
+
+                <!-- Package 3: Kashmir -->
+                <article class="package-card" id="pkg-kashmir">
+                    <div class="package-img-wrap">
+                        <img src="images/kashmir.jpg" alt="Dal Lake shikara in Kashmir" width="400" height="220">
+                        <span class="package-duration-badge">6 Days / 5 Nights</span>
+                    </div>
+                    <div class="package-body">
+                        <div class="package-header">
+                            <span class="package-destination">Srinagar &amp; Gulmarg</span>
+                            <h3 class="package-title">Kashmir Paradise &amp; Shikara Tour</h3>
+                        </div>
+                        <div class="package-price-box">
+                            Price: <mark>&#8377;21,999</mark> <small>/ person</small>
+                        </div>
+                        <p class="package-desc">
+                            Experience a timeless stay on a deluxe Dal Lake houseboat, world-class Gulmarg Gondola rides, 
+                            and the lush Mughal Gardens of Srinagar.
+                        </p>
+                        <div class="package-inclusions">
+                            <h4>Package Inclusions:</h4>
+                            <ul>
+                                <li>1 Night Deluxe Houseboat + 4 Nights Hotel</li>
+                                <li>All Meals Included (MAP Plan)</li>
+                                <li>Shikara Ride &amp; Gulmarg Phase-1 Gondola</li>
+                                <li>Dedicated Chauffeur Driven Vehicle</li>
+                            </ul>
+                        </div>
+                        <a href="#booking-form" class="btn btn-primary">Book Now</a>
+                    </div>
+                </article>
+
+                <!-- Package 4: Jaipur -->
+                <article class="package-card" id="pkg-jaipur">
+                    <div class="package-img-wrap">
+                        <img src="images/jaipur.jpg" alt="Amer Fort architecture in Jaipur" width="400" height="220">
+                        <span class="package-duration-badge">5 Days / 4 Nights</span>
+                    </div>
+                    <div class="package-body">
+                        <div class="package-header">
+                            <span class="package-destination">Jaipur &amp; Amer</span>
+                            <h3 class="package-title">Royal Rajasthan Heritage Expedition</h3>
+                        </div>
+                        <div class="package-price-box">
+                            Price: <mark>&#8377;16,999</mark> <small>/ person</small>
+                        </div>
+                        <p class="package-desc">
+                            Discover the royal opulence of the Pink City, exploring grand palaces, historic hilltop fortresses, 
+                            cultural folk dances, and heritage cuisines.
+                        </p>
+                        <div class="package-inclusions">
+                            <h4>Package Inclusions:</h4>
+                            <ul>
+                                <li>Authentic Heritage Haveli Stay</li>
+                                <li>Daily Traditional Rajasthani Breakfast</li>
+                                <li>Amer Fort, Hawa Mahal &amp; City Palace Tour</li>
+                                <li>Chokhi Dhani Cultural Village Evening</li>
+                            </ul>
+                        </div>
+                        <a href="#booking-form" class="btn btn-primary">Book Now</a>
+                    </div>
+                </article>
+
+                <!-- Package 5: Switzerland -->
+                <article class="package-card" id="pkg-swiss">
+                    <div class="package-img-wrap">
+                        <img src="images/switzerland.jpg" alt="Swiss Alps valley and snow mountains" width="400" height="220">
+                        <span class="package-duration-badge">7 Days / 6 Nights</span>
+                    </div>
+                    <div class="package-body">
+                        <div class="package-header">
+                            <span class="package-destination">Zurich, Lucerne &amp; Interlaken</span>
+                            <h3 class="package-title">Swiss Alps Grand Alpine Journey</h3>
+                        </div>
+                        <div class="package-price-box">
+                            Price: <mark>&#8377;84,999</mark> <small>/ person</small>
+                        </div>
+                        <p class="package-desc">
+                            Marvel at breathtaking alpine panoramas, ride scenic cogwheel mountain railways, take relaxing cruises 
+                            on Lake Lucerne, and explore Zurich.
+                        </p>
+                        <div class="package-inclusions">
+                            <h4>Package Inclusions:</h4>
+                            <ul>
+                                <li>4-Star Swiss Chalet &amp; City Hotels</li>
+                                <li>Swiss Travel Pass (Unlimited Trains &amp; Boats)</li>
+                                <li>Excursion to Mount Titlis / Jungfraujoch</li>
+                                <li>Daily Continental Breakfast</li>
+                            </ul>
+                        </div>
+                        <a href="#booking-form" class="btn btn-primary">Book Now</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- ================================================================
+                 PACKAGE COMPARISON TABLE (HTML TABLES SYLLABUS INTEGRATION)
+                 ================================================================ -->
+            <section class="table-section">
+                <div class="section-header">
+                    <h2 class="section-title">Package Comparison Matrix</h2>
+                    <p class="section-subtitle">
+                        Compare duration, estimated pricing, lodging type, and ratings side-by-side to find your ideal fit.
+                    </p>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="custom-table" border="1" cellpadding="12" cellspacing="0">
+                        <caption>Wanderflow Tour Packages Overview &amp; Cost Comparison</caption>
+                        
+                        <!-- Table Header -->
+                        <thead>
+                            <tr>
+                                <th>Package Name</th>
+                                <th>Destination</th>
+                                <th>Duration</th>
+                                <th>Price (Per Person)</th>
+                                <th>Accommodation</th>
+                                <th>Meal Plan</th>
+                                <th>User Rating</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Table Body -->
+                        <tbody>
+                            <tr>
+                                <td><b>Manali Snow &amp; Valley Escape</b></td>
+                                <td>Manali, HP</td>
+                                <td>5 Days / 4 Nights</td>
+                                <td>&#8377;14,999</td>
+                                <td>3-Star Mountain Resort</td>
+                                <td>Breakfast &amp; Dinner</td>
+                                <td>4.8 / 5.0</td>
+                            </tr>
+                            <tr>
+                                <td><b>Goa Beach &amp; Sunset Retreat</b></td>
+                                <td>Goa Coastline</td>
+                                <td>4 Days / 3 Nights</td>
+                                <td>&#8377;11,499</td>
+                                <td>Beachside Resort</td>
+                                <td>Daily Breakfast</td>
+                                <td>4.7 / 5.0</td>
+                            </tr>
+                            <tr>
+                                <td><b>Kashmir Paradise &amp; Shikara Tour</b></td>
+                                <td>Srinagar &amp; Gulmarg</td>
+                                <td>6 Days / 5 Nights</td>
+                                <td>&#8377;21,999</td>
+                                <td>Houseboat &amp; 4-Star Hotel</td>
+                                <td>All Meals (Breakfast, Lunch, Dinner)</td>
+                                <td>4.9 / 5.0</td>
+                            </tr>
+                            <tr>
+                                <td><b>Royal Rajasthan Heritage Expedition</b></td>
+                                <td>Jaipur &amp; Amer</td>
+                                <td>5 Days / 4 Nights</td>
+                                <td>&#8377;16,999</td>
+                                <td>Heritage Haveli Hotel</td>
+                                <td>Breakfast &amp; Cultural Dinner</td>
+                                <td>4.8 / 5.0</td>
+                            </tr>
+                            <tr>
+                                <td><b>Swiss Alps Grand Alpine Journey</b></td>
+                                <td>Switzerland (Lucerne/Interlaken)</td>
+                                <td>7 Days / 6 Nights</td>
+                                <td>&#8377;84,999</td>
+                                <td>4-Star Alpine Lodges</td>
+                                <td>Daily Continental Breakfast</td>
+                                <td>5.0 / 5.0</td>
+                            </tr>
+                        </tbody>
+
+                        <!-- Table Footer -->
+                        <tfoot>
+                            <tr>
+                                <td colspan="3"><b>Summary: 5 Packages Displayed</b></td>
+                                <td colspan="4"><i>* Prices are sample academic estimates including taxes and standard sightseeing transfers.</i></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <!-- ================================================================
+                 FRONTEND BOOKING INQUIRY FORM
+                 ================================================================ -->
+            <section class="booking-form-box" id="booking-form">
+                <div class="section-header" style="margin-bottom: 1.5rem;">
+                    <h2 class="section-title">Reserve Your Package</h2>
+                    <p class="section-subtitle">
+                        Complete this frontend reservation form to submit a sample booking inquiry.
+                    </p>
+                </div>
+
+                <!-- Form (POST method demonstration) -->
+                <form action="#booking-form" method="post">
+                    <div class="booking-form-grid">
+                        
+                        <!-- Select Package -->
+                        <div class="form-group form-full-width">
+                            <label for="select-pkg">Select Tour Package:</label>
+                            <select id="select-pkg" name="selected_package" required>
+                                <option value="">-- Choose a Travel Package --</option>
+                                <option value="manali">Manali Snow &amp; Valley Escape (&#8377;14,999)</option>
+                                <option value="goa">Goa Beach &amp; Sunset Retreat (&#8377;11,499)</option>
+                                <option value="kashmir">Kashmir Paradise &amp; Shikara Tour (&#8377;21,999)</option>
+                                <option value="jaipur">Royal Rajasthan Heritage Expedition (&#8377;16,999)</option>
+                                <option value="swiss">Swiss Alps Grand Alpine Journey (&#8377;84,999)</option>
+                            </select>
+                        </div>
+
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="user-name">Full Name:</label>
+                            <input type="text" id="user-name" name="fullname" placeholder="e.g. Jasmeet Singh" required>
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="form-group">
+                            <label for="user-email">Email Address:</label>
+                            <input type="email" id="user-email" name="email" placeholder="e.g. jasmeet@example.com" required>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="form-group">
+                            <label for="user-phone">Phone Number:</label>
+                            <input type="tel" id="user-phone" name="phone" placeholder="e.g. +91 98765 43210" required>
+                        </div>
+
+                        <!-- Number of Travellers -->
+                        <div class="form-group">
+                            <label for="user-travellers">Number of Travellers:</label>
+                            <input type="number" id="user-travellers" name="travellers" min="1" max="25" value="2" required>
+                        </div>
+
+                        <!-- Departure Date -->
+                        <div class="form-group">
+                            <label for="user-date">Preferred Travel Date:</label>
+                            <input type="date" id="user-date" name="travel_date" required>
+                        </div>
+
+                        <!-- Special Request -->
+                        <div class="form-group">
+                            <label for="user-notes">Special Requests / Preferences:</label>
+                            <input type="text" id="user-notes" name="special_notes" placeholder="e.g. Vegetarian food, extra bed, etc.">
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="form-group form-full-width">
+                            <div class="form-actions">
+                                <input type="submit" value="Submit Booking Inquiry" class="btn btn-primary">
+                                <input type="reset" value="Reset Form" class="btn btn-navy">
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+                <!-- Academic Limitation Alert -->
+                <div class="alert-notice">
+                    <b>Educational Demonstration Notice:</b> This website is an academic frontend project developed for 
+                    B.Tech Information Technology coursework. No monetary transactions, credit card handling, or live 
+                    database bookings are executed on this platform.
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ====================================================================
+         FOOTER
+         ==================================================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="footer-col">
+                    <h3>WANDERFLOW</h3>
+                    <p>
+                        A Comprehensive Travel Booking and Exploration Platform designed as an academic frontend project 
+                        by B.Tech Information Technology students at Guru Nanak Dev Engineering College, Ludhiana.
+                    </p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">&bull; Home</a></li>
+                        <li><a href="destinations.html">&bull; Destinations</a></li>
+                        <li><a href="packages.html">&bull; Travel Packages</a></li>
+                        <li><a href="about.html">&bull; About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Info -->
+                <div class="footer-col">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-item">
+                        <span><b>Email:</b></span>
+                        <a href="mailto:info@wanderflow.com">info@wanderflow.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span><b>Phone:</b></span>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span><b>Campus:</b></span>
+                        <span>GNDEC, Gill Park, Ludhiana, Punjab - 141006</span>
+                    </div>
+                </div>
+
+                <!-- Col 4: Project Info -->
+                <div class="footer-col">
+                    <h3>Academic Info</h3>
+                    <p>
+                        <b>Batch:</b> 2026 (June - July Training)<br>
+                        <b>Department:</b> Information Technology<br>
+                        <b>College:</b> Guru Nanak Dev Engineering College<br>
+                        <b>Tech Stack:</b> HTML5 &amp; CSS3
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Wanderflow Travel Platform. Developed for Academic Training Evaluation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
